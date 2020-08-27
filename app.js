@@ -64,36 +64,36 @@ const game = () => {
         return;
       }
       //Check for Rock
-      if (playerChoice === "rock") {
-        if (computerChoice === "scissors") {
-          winner.textContent = "Player Wins";
+      if (playerChoice === "Rock") {
+        if (computerChoice === "Scissors") {
+          winner.textContent = "You Win";
           pScore++;
           updateScore();
           return;
         } else {
-          winner.textContent = "Computer Wins";
+          winner.textContent = "You Win";
           cScore++;
           updateScore();
           return;
         }
       }
       //Check for Paper
-      if (playerChoice === "paper") {
-        if (computerChoice === "scissors") {
+      if (playerChoice === "Paper") {
+        if (computerChoice === "Scissors") {
           winner.textContent = "Computer Wins";
           cScore++;
           updateScore();
           return;
         } else {
-          winner.textContent = "Player Wins";
+          winner.textContent = "You Win";
           pScore++;
           updateScore();
           return;
         }
       }
       //Check for Scissors
-      if (playerChoice === "scissors") {
-        if (computerChoice === "rock") {
+      if (playerChoice === "Scissors") {
+        if (computerChoice === "Rock") {
           winner.textContent = "Computer Wins";
           cScore++;
           updateScore();

@@ -1,3 +1,4 @@
+/* Is applied to all elements */
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +7,12 @@
   
   section {
     height: 100vh;
-    background-color: rgb(39, 41, 68);
+    background-color: rgb(45, 119, 76);
     font-family: sans-serif;
   }
   
   .score {
-    color: rgb(224, 224, 224);
+    color: rgb(208, 204, 224);
     height: 20vh;
     display: flex;
     justify-content: space-around;
@@ -41,13 +42,13 @@
   }
   .intro button,
   .match button {
-    width: 150px;
-    height: 50px;
+    width: 180px;
+    height: 80px;
     background: none;
     border: none;
     color: rgb(224, 224, 224);
-    font-size: 20px;
-    background: rgb(45, 117, 96);
+    font-size: 25px;
+    background: rgb(0, 0, 0);
     border-radius: 3px;
     cursor: pointer;
   }
@@ -85,6 +86,9 @@
     opacity: 1;
     pointer-events: all;
   }
+
+  /* Adds animation 
+     Seen when an option of rock. paper, or scissors is chosen */
 
   @keyframes shakePlayer {
     0% {
@@ -145,4 +149,3 @@
       transform: translateY(0px);
     }
   }
-  
